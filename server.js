@@ -9,12 +9,14 @@ const helloRoute = require('./routes/hello');
 const dataRoute = require('./routes/data');
 const addRoute = require('./routes/add');
 const add2Route = require('./routes/add2');
+const getStores = require('./routes/getStores');
 
 // Use routes
 app.use(helloRoute);
 app.use(dataRoute);
 app.use(addRoute);
 app.use(add2Route);
+app.use(getStores);
 
 
 // Start the server
